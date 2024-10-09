@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Estilos para el submenú */
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 200px;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Hace que los elementos del submenú se dispongan en una columna vertical */
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #575757;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.dropdown:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+#contenedor-desarrolladores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta-desarrollador {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.tarjeta-desarrollador:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-desarrollador img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.tarjeta-desarrollador h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.tarjeta-desarrollador p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.enlaces-sociales a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.vista-previa {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: gray;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 40px); /* Ajuste para que no cubra completamente los enlaces sociales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Evita que la vista previa interfiera con los enlaces */
+}
+
+.tarjeta-desarrollador:hover .vista-previa {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+

@@ -1,0 +1,46 @@
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.navbar ul li {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap; /* Evita que los elementos se queden en la misma línea */
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
+.navbar ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.navbar ul .submenu .submenu {
+    left: 100%;
+    top: 0;
+}
+
+.navbar ul li:hover > .submenu {
+    display: block;
+}
+
+.navbar ul .submenu li {
+    display: block; /* Asegura que cada elemento ocupe una nueva línea */
+    white-space: nowrap; /* Asegura que los textos largos no se corten en varias líneas */
+}

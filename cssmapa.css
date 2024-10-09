@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center; /* Centra el menú horizontalmente */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Estilos para el submenú */
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 200px;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Hace que los elementos del submenú se dispongan en una columna vertical */
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #575757;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.dropdown:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.menu-logo {
+    width: 30px; /* Ajusta el tamaño de la imagen según lo necesites */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea la imagen con el texto */
+}
+
+
+
+
+
+
+h1 {
+    font-size: 36px; /* Tamaño de la fuente */
+    font-weight: bold; /* Peso de la fuente */
+    text-align: center; /* Alineación centrada */
+    color: #333; /* Color del texto */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    line-height: 1.2; /* Altura de la línea */
+    font-family: 'Arial', sans-serif; /* Familia de la fuente */
+    
+}
+
+
+
+
+
+
+
+.salvador{
+
+    width: 100%;
+    height: 0vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    box-sizing: border-box;
+    
+}
+
+
+
+.salvador path{
+    transition: transform 0.3s ease;
+  fill: rgb(0, 118, 161);
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.salvador path:hover {
+    transform: scale(1.0);
+}
+
+
+
+
+
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+svg path {
+    fill: transparent; 
+    stroke: #000000; 
+    stroke-width: 2;
+    pointer-events: all;
+    transition: transform 0.2s ease-in-out; 
+}
+
+svg path:hover {
+    fill: rgba(0, 0, 0, 0.1);
+    transform: scale(2.0); 
+    transition: transform 0.2s ease-in-out;
+    pointer-events: fill;
+}
+svg path:hover {
+    pointer-events: fill; 
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #003f88; /* Azul más oscuro para contraste */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 3px solid #1e90ff;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+

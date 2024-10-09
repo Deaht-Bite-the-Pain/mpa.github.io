@@ -1,0 +1,186 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center; /* Centra el menú horizontalmente */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Estilos para el submenú */
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 200px;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Hace que los elementos del submenú se dispongan en una columna vertical */
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #575757;
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.dropdown:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+footer {
+    background-color: #003f88; /* Azul más oscuro para contraste */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 3px solid #1e90ff;
+}
+
+
+
+
+
+
+h1 {
+    font-size: 36px; /* Tamaño de la fuente */
+    font-weight: bold; /* Peso de la fuente */
+    text-align: center; /* Alineación centrada */
+    color: white; /* Color del texto */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    line-height: 1.2; /* Altura de la línea */
+    font-family: 'Arial', sans-serif; /* Familia de la fuente */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: gray;
+    color: #333;
+}
+header {
+ 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+#contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#view {
+    background-color: #e9ecef;
+    border: 2px dashed rgb(29, 164, 58);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+textarea {
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    resize: none;
+}
+.btn-custom {
+    background-color: rgb(39, 39, 161);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-custom:hover {
+    background-color: greenyellow;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+p {
+    font-size: 14px;
+    color: #777;
+}
+
+h1{
+    color: #333;
+}
